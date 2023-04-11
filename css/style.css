@@ -1,0 +1,149 @@
+@import url("catppuccin.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root {
+    --font: "Poppins", sans-serif;
+    --font-size: 18px;
+    --font-weight-normal: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+  
+    --color-accent: var(--ctp-macchiato-text);
+    --color-backgroud: var(--ctp-macchiato-base);
+    --color-text: var(--ctp-macchiato-text);
+    --color-text-headline: var(--ctp-macchiato-subtext1);
+    --color-text-inactive: var(--ctp-macchiato-overlay1);
+}
+
+  body {
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: var(--font);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text);
+    background-color: var(--color-backgroud);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+
+  a {
+    color: var(--color-text-inactive);
+    font-weight: var(--font-weight-semi-bold);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-accent);
+  }
+
+  .sidebar {
+    padding-top: 4rem;
+    padding-left: 3em;
+    list-style: none;
+  }
+  
+  .sidebar-image {
+    width: 6em;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  
+  .sidebar-item {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  
+  .content {
+    overflow: auto;
+    display: grid;
+    gap: 3em;
+    padding-top: 4rem;
+    padding-right: 15rem;
+  }
+  
+  .content header {
+    display: grid;
+    column-gap: 3em;
+    grid-template-columns: min-content;
+    grid-template-areas:
+      "image title"
+      "image subtitle"
+      "image contacts";
+    margin-bottom: 1em;
+  }
+  
+  .header-image {
+    grid-area: image;
+  }
+  
+  .header-title {
+    grid-area: title;
+    margin: 0;
+  }
+  
+  .header-subtitle {
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-weight: var(--font-weight-normal);
+    font-size: large;
+    grid-area: subtitle;
+  }
+  
+  article {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  footer {
+    margin-top: 3em;
+    padding: 1em;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+
+  .portrait {
+    width: 10em;
+    height: auto;
+    border-radius: 5%;
+  }
+  
+  .contact-options {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5em;
+  
+  }
+  
+  .contact-list {
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+  }
+  
+  .contact-list-item {
+    display: inline-flex;
+    gap: 1.5em;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 1.75em;
+  }
+  
+  .icon-small {
+    font-size: 1.5em;
+  }
